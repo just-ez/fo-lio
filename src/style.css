@@ -101,16 +101,7 @@ a {
   
 }
 
-.see_more {
-  width: 200px;
-  padding: 10px;
-  border: 1px solid #555;
-   border-radius: 10px;
-   text-align: center;
-   margin: 0 auto;
-   margin-bottom: 10px;
-   color: #777;
-}
+
 
 footer {
   display: flex;
