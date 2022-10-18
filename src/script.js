@@ -90,12 +90,17 @@ $(document).ready(function() {
     }
 });
 
-document.querySelector('.artme').addEventListener('mouseover', ()=> {
-    console.log('hi');
-    document.querySelector('.float_vid_1').style.opacity = '.5'
-})
+const preloader = document.querySelector('.loader_con')
+const fadeOutEffect = setInterval(() => {
+    if (!preloader.style.opacity) {
+      preloader.style.opacity = 1;
+    }
+    if (preloader.style.opacity > 0) {
+      preloader.style.opacity -= 0.1;
+    } else {
+      clearInterval(fadeEffect);
+    }
+  }, 300);
+  
+window.addEventListener('load', fadeOutEffect)
 
-document.querySelector('.artme').addEventListener('mouseenter', ()=> {
-    console.log('hi');
-    document.querySelector('.float_vid_1').style.opacity = '0'
-})
