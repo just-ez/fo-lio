@@ -44,7 +44,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 9999;
+  /* z-index: 9999; */
   background-color: #111;
   opacity: 1;
 }
@@ -176,14 +176,7 @@ a {
   color: #888;
   cursor: pointer;
 }
-.float_vid_1 {
-  opacity: 0;
-  position: absolute;
-  left: 100px;
-  top: 5px;
-  transition: 1s all;
-  
-}
+
 
 
 
@@ -255,15 +248,16 @@ footer p:hover {
   }
   .scrolling-text .scrolling-text-content  {
     font-size: 90px;
-  }
-  
-   
+  } 
   .banner_img  {
    display: none;
   }
-  .container {
-    opacity: 0;
-    transition: 4s all;
+  .scrolling-text .scrolling-text-content {
+    color: #777;
+    font-size: 5vw;
+    white-space: nowrap;
+    line-height: 1em;
+    margin: 50px 0;
   }
 }
 
